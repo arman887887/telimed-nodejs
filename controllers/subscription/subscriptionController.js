@@ -23,7 +23,7 @@ export const getTransaction = async (req, res) => {
             {
                 $unwind: "$user",
 
-            },
+            }, 
             {
                 $project: {
                     "user.password": 0
