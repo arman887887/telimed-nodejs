@@ -25,7 +25,7 @@ export const getTransaction = async (req, res) => {
 
             }, 
             {
-                $project: {
+                $project: { 
                     "user.password": 0
                 },
 
